@@ -18,6 +18,10 @@ export const router = createBrowserRouter([
                 element: <Work />
             },
             {
+                path: '/work',
+                element: <Work />
+            },
+            {
                 path: '/firstCaseStudy',
                 element: <FirstCaseStudy />
             },
