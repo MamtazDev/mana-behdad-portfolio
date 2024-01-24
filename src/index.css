@@ -13,3 +13,10 @@
     height: 979px;
     background-size: cover;
 }
+.skill_banner_bg {
+    background-image: url('./assets/skillbanner.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 979px;
+    background-size: cover;
+}

@@ -6,6 +6,8 @@ import Layout from "../Layout/Layout";
 import Work from "../pages/Work/Work";
 import FirstCaseStudy from "../pages/CaseStudy/FirstCaseStudy";
 import SecondCaseStudy from "../pages/CaseStudy/SecondCaseStudy";
+import About from "../pages/About/About";
+import Skills from "../pages/Skills/Skills";
 
 
 export const router = createBrowserRouter([
@@ -28,6 +30,15 @@ export const router = createBrowserRouter([
             {
                 path: '/secondCaseStudy',
                 element: <SecondCaseStudy />
+            },
+            {
+                path: '/about',
+                element: <About />
+            }
+            ,
+            {
+                path: '/skills',
+                element: <Skills />
             }
         ]
     },
