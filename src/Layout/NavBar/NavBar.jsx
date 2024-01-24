@@ -6,6 +6,9 @@ const NavBar = () => {
     const location = useLocation();
     const isAbsolute = location.pathname === '/' || location.pathname === '/skills' || location.pathname === '/work';
 
+    const isActive = (path) => {
+        return location.pathname === path;
+    };
 
     return (
         <>
@@ -23,17 +26,26 @@ const NavBar = () => {
                     </button>
                     <div className="hidden w-full md:block md:w-auto" id="navbar-default">
                         <ul className="flex lg:flex-row flex-col justify-center items-center gap-[40px]">
-                            <li className='lg:mt-0 mt-[30px] '>
-                                <Link to="/work" className=" text-white  text-xl font-outfit hover:text-[#8BEAAD] " aria-current="page">Work</Link>
+                            <li>
+                                <Link to="/work" className={isActive('/work') ? 'text-[#8BEAAD] text-xl font-outfit hover:text-[#8BEAAD]' : 'text-white text-xl font-outfit hover:text-[#8BEAAD]'} aria-current="page">
+                                    Work
+                                </Link>
                             </li>
                             <li>
-                                <Link to="/about" className=" text-white  text-xl font-outfit hover:text-[#8BEAAD] " aria-current="page">About</Link>
+                                <Link to="/about" className={isActive('/about') ? 'text-[#8BEAAD] text-xl font-outfit hover:text-[#8BEAAD]' : 'text-white text-xl font-outfit hover:text-[#8BEAAD]'} aria-current="page">
+                                    About
+                                </Link>
                             </li>
                             <li>
-                                <Link to="/skills" className=" text-white  text-xl font-outfit hover:text-[#8BEAAD] " aria-current="page">Skills</Link>
+                                <Link to="/skills"
+                                    className={isActive('/skills') ? 'text-[#8BEAAD] text-xl font-outfit hover:text-[#8BEAAD]' : 'text-white text-xl font-outfit hover:text-[#8BEAAD]'} aria-current="page">
+                                    Skills
+                                </Link>
                             </li>
                             <li>
-                                <Link to="/resume" className=" text-white  text-xl font-outfit hover:text-[#8BEAAD] " aria-current="page">Resume</Link>
+                                <Link to="#" className={isActive('#') ? 'text-[#8BEAAD] text-xl font-outfit hover:text-[#8BEAAD]' : 'text-white text-xl font-outfit hover:text-[#8BEAAD]'} aria-current="page">
+                                    Resume
+                                </Link>
                             </li>
 
                         </ul>

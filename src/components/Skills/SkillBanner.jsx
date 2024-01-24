@@ -1,6 +1,7 @@
 import React from 'react'
 
 const SkillBanner = () => {
+
     return (
         <div className="skill_banner_bg text-white mb-[130px] ">
             <div className='max-w-screen-xl mx-auto pt-[189px]'>
