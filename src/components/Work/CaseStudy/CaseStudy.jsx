@@ -26,7 +26,7 @@ const CaseStudy = () => {
                         data-aos-duration="2000"
                         data-aos-easing="ease-in-out"
                         data-aos-mirror="true">
-                        <button className='bg-[#131313]  rounded-[10px] py-[20px] text-[36px] font-semibold font-sans flex items-center gap-[30px] w-[450px] justify-center'>View Case study  <img src={arrow} alt="" /></button>
+                        <button className='bg-[#131313] hover:bg-[#212020] transition ease-in-out delay-150  rounded-[10px] py-[20px] text-[36px] font-semibold font-sans flex items-center gap-[30px] w-[450px] justify-center'>View Case study  <img src={arrow} alt="" /></button>
                     </Link>
                 </div>
                 <div className='mb-[120px]'>
@@ -42,7 +42,7 @@ const CaseStudy = () => {
                         data-aos-duration="2000"
                         data-aos-easing="ease-in-out"
                         data-aos-mirror="true">
-                        <button className='bg-[#131313] rounded-[10px] py-[20px] text-[36px] font-semibold font-sans flex items-center gap-[30px] w-[450px] justify-center'>View Case study  <img src={arrow} alt="" /></button>
+                        <button className='bg-[#131313] hover:bg-[#212020] transition ease-in-out delay-150 rounded-[10px] py-[20px] text-[36px] font-semibold font-sans flex items-center gap-[30px] w-[450px] justify-center'>View Case study  <img src={arrow} alt="" /></button>
                     </Link>
                 </div>
             </div>

@@ -1,12 +1,12 @@
 import React from 'react'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { useTypingEffect } from '../../../hooks/typing-effect';
+
+import { ReactTyped } from "react-typed";
 
 const WorkBanner = () => {
-
   AOS.init();
-  const text = useTypingEffect("Mana", 500);
+
 
   return (
     <div className="text-white work_banner_bg ">
@@ -18,7 +18,8 @@ const WorkBanner = () => {
           data-aos-duration="1000"
           data-aos-easing="ease-in-out"
           data-aos-mirror="true">
-          Hey there, I am    {text} <br />
+          Hey there, I am   <ReactTyped strings={["Mana"]} typeSpeed={150}
+            backSpeed={150} loop /> <br />
 
           <span className='mb-0'>a <span className='text-[#8BEAAD]'> UX/UI</span>
             designer based</span>
