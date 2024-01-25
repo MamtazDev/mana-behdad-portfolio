@@ -17,7 +17,7 @@ const CaseStudy = () => {
                         data-aos-delay="50"
                         data-aos-duration="1000"
                         data-aos-easing="ease-in-out"
-                        data-aos-mirror="true" className='w-full overflow-x-hidden'>
+                        data-aos-mirror="true" className='w-full overflow-x-hidden img-hover-zoom'>
                         <img className='mb-[41px] w-full' src={case_study1} alt="" />
                     </div>
                     <div className="text-center">
@@ -37,7 +37,7 @@ const CaseStudy = () => {
                         data-aos-delay="50"
                         data-aos-duration="1000"
                         data-aos-easing="ease-in-out"
-                        data-aos-mirror="true" className='w-full overflow-x-hidden'>
+                        data-aos-mirror="true" className='w-full overflow-x-hidden img-hover-zoom'>
                         <img className='mb-[41px] w-full' src={case_study2} alt="" />
                     </div>
                     <Link to="/secondCaseStudy" data-aos="fade-right"
