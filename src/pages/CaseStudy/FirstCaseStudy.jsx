@@ -3,9 +3,9 @@ import FirstCases from '../../components/CaeStudy1/FirstCases'
 
 const FirstCaseStudy = () => {
     return (
-        <div className=''>
+        <>
             <FirstCases />
-        </div>
+        </>
     )
 }
 
