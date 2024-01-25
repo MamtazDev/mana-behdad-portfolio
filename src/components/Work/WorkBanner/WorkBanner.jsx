@@ -5,7 +5,9 @@ import 'aos/dist/aos.css';
 import { ReactTyped } from "react-typed";
 
 const WorkBanner = () => {
+
   AOS.init();
+
   return (
     <div className="text-white work_banner_bg lg:px-0  px-[24px]">
       <div className='max-w-screen-xl mx-auto pt-[189px]'>

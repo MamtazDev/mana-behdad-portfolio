@@ -1,8 +1,12 @@
 import React from 'react';
 import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Tools = () => {
+
+    AOS.init();
 
     return (
         <>
@@ -12,7 +16,12 @@ const Tools = () => {
                     <p className='text-[24px] font-sans font-semibold'>Tools I know</p>
                 </div>
                 <div className='grid grid-cols-12 gap-[24px]'>
-                    <div className="col-span-12 lg:col-span-3">
+                    <div className="col-span-12 lg:col-span-3" data-aos="fade-top"
+                        data-aos-offset="200"
+                        data-aos-delay="100"
+                        data-aos-duration="1000"
+                        data-aos-easing="ease-in-out"
+                        data-aos-mirror="true">
                         <div className='rounded-[10px] bg-[#131313] border border-[#000] shadow-tools py-[50px] px-[30px] '>
                             <p className='text-[#58A274] text-[24px]  font-semibold font-sans mb-[24px]  text-center'>Html</p>
                             <div className='w-[250px]  h-[248px] '>
@@ -33,7 +42,12 @@ const Tools = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-span-12 lg:col-span-3">
+                    <div className="col-span-12 lg:col-span-3" data-aos="fade-bottom"
+                        data-aos-offset="200"
+                        data-aos-delay="500"
+                        data-aos-duration="1000"
+                        data-aos-easing="ease-in-out"
+                        data-aos-mirror="true">
                         <div className='rounded-[10px] bg-[#131313] border border-[#000] shadow-tools py-[50px] px-[30px] '>
                             <p className='text-[#FC387E] text-[24px]  font-semibold font-sans mb-[24px]  text-center'>CSS</p>
                             <div className='w-[250px]  h-[248px] '>
@@ -54,7 +68,12 @@ const Tools = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-span-12 lg:col-span-3">
+                    <div className="col-span-12 lg:col-span-3" data-aos="fade-top"
+                        data-aos-offset="200"
+                        data-aos-delay="1000"
+                        data-aos-duration="1000"
+                        data-aos-easing="ease-in-out"
+                        data-aos-mirror="true">
                         <div className='rounded-[10px] bg-[#131313] border border-[#000] shadow-tools py-[50px] px-[30px] '>
                             <p className='text-[#F2C94C] text-[24px]  font-semibold font-sans mb-[24px]  text-center'>Illustrator</p>
                             <div className='w-[250px]  h-[248px] '>
@@ -75,7 +94,12 @@ const Tools = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-span-12 lg:col-span-3">
+                    <div className="col-span-12 lg:col-span-3" data-aos="fade-bottom"
+                        data-aos-offset="200"
+                        data-aos-delay="1500"
+                        data-aos-duration="1000"
+                        data-aos-easing="ease-in-out"
+                        data-aos-mirror="true">
                         <div className='rounded-[10px] bg-[#131313] border border-[#000] shadow-tools py-[50px] px-[30px] '>
                             <p className='text-[#9747FF] text-[24px]  font-semibold font-sans mb-[24px]  text-center'>Photoshop</p>
                             <div className='w-[250px]  h-[248px] '>
