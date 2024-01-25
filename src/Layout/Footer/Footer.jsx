@@ -9,7 +9,7 @@ const Footer = () => {
 
     <>
       <div className='bg-black '>
-        <div className="max-w-screen-xl mx-auto lg:mx-0 ">
+        <div className="max-w-screen-xl lg:mx-auto mx-[24px] ">
           <div className='h-[1px] bg-[#FFFFFF4D]'></div>
           <div className='py-[47px] w-full'>
             <div className="flex items-center justify-between" >
