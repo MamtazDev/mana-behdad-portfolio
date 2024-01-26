@@ -35,3 +35,8 @@
 .img-hover-zoom:hover img {
     transform: scale(1.1);
 }
+@media(max-width:768px) {
+    .work_banner_bg {
+        height: 900px;
+    }
+}

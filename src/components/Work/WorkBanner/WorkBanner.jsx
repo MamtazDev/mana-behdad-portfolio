@@ -9,9 +9,9 @@ const WorkBanner = () => {
   AOS.init();
 
   return (
-    <div className="text-white work_banner_bg lg:px-0  px-[24px]">
+    <div className="text-white work_banner_bg lg:px-0  px-[24px] overflow-x-hidden">
       <div className='max-w-screen-xl mx-auto pt-[189px]'>
-        <div className='font-normal font-outfit  lg:text-start  text-center lg:text-[68px] text-[40px] text-white mb-[36px]  '
+        <div className='font-normal font-outfit  lg:text-start  text-center lg:text-[68px] text-[40px] text-white mb-[36px]'
           data-aos="fade-right"
           data-aos-offset="200"
           data-aos-delay="50"
