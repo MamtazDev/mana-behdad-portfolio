@@ -23,7 +23,7 @@ const CaseStudy = () => {
                         <img className='mb-[41px] w-full' src={case_study1} alt="" />
                     </div>
                     <div className="text-center">
-                        <Link to="/firstCaseStudy" data-aos="fade-up"
+                        <Link to="#" data-aos="fade-up"
                             data-aos-offset="200"
                             data-aos-delay="500"
                             data-aos-duration="1000"
