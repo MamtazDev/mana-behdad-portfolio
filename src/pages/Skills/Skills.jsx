@@ -5,11 +5,11 @@ import Tools from '../../components/Skills/Tools'
 
 const Skills = () => {
     return (
-        <>
+        <div className='lg:mx-0 mx-[24px]'>
             <SkillBanner />
             <AllSkills />
             <Tools />
-        </>
+        </div>
     )
 }
 
