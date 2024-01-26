@@ -10,27 +10,27 @@ const Photography = () => {
 
     return (
 
-        <div className='mb-[81px]'>
+        <div className='mb-[81px] overflow-hidden'>
             <h2 className='text-[36px] font-Oswald  font-normal text-[#8BEAAD] mb-[19px]'>Photography</h2>
             <p className='text-[24px] font-normal font-sans mb-[35px] '>Step into the human tapestry captured through my lens. In the photography section, faces become stories, and moments turn into emotions frozen in time.</p>
             <div className='grid grid-cols-12 gap-[45px]'>
-                <div className="col-span-12 lg:col-span-4 img-hover-zoom">
-                    <img src={p1} alt="" />
+                <div className="w-full col-span-12 overflow-hidden lg:col-span-4 img-hover-zoom" >
+                    <img className='w-full' src={p1} alt="photography" />
                 </div>
-                <div className="col-span-12 lg:col-span-4 img-hover-zoom">
-                    <img src={p2} alt="" />
+                <div className="w-full col-span-12 overflow-hidden lg:col-span-4 img-hover-zoom" >
+                    <img className='w-full' src={p2} alt="photography" />
                 </div>
-                <div className="col-span-12 lg:col-span-4 img-hover-zoom">
-                    <img src={p3} alt="" />
+                <div className="w-full col-span-12 overflow-hidden lg:col-span-4 img-hover-zoom" >
+                    <img className='w-full' src={p3} alt="photography" />
                 </div>
-                <div className="col-span-12 lg:col-span-4 img-hover-zoom">
-                    <img src={p4} alt="" />
+                <div className="w-full col-span-12 overflow-hidden lg:col-span-4 img-hover-zoom" >
+                    <img className='w-full' src={p4} alt="photography" />
                 </div>
-                <div className="col-span-12 lg:col-span-4 img-hover-zoom">
-                    <img src={p5} alt="" />
+                <div className="w-full col-span-12 overflow-hidden lg:col-span-4 img-hover-zoom" >
+                    <img className='w-full' src={p5} alt="photography" />
                 </div>
-                <div className="col-span-12 lg:col-span-4 img-hover-zoom">
-                    <img src={p6} alt="" />
+                <div className="w-full col-span-12 overflow-hidden lg:col-span-4 img-hover-zoom" >
+                    <img className='w-full' src={p6} alt="photography" />
                 </div>
 
             </div>

@@ -24,7 +24,7 @@ const Tools = () => {
                         data-aos-mirror="true">
                         <div className='rounded-[10px] bg-[#131313] border border-[#000] shadow-tools py-[50px] px-[30px] '>
                             <p className='text-[#58A274] text-[24px]  font-semibold font-sans mb-[24px]  text-center'>Html</p>
-                            <div className='w-[250px]  h-[248px] '>
+                            <div className='w-[250px] mx-auto  h-[248px] '>
                                 <CircularProgressbar
                                     styles={buildStyles({
                                         rotation: 0.25,
@@ -50,7 +50,7 @@ const Tools = () => {
                         data-aos-mirror="true">
                         <div className='rounded-[10px] bg-[#131313] border border-[#000] shadow-tools py-[50px] px-[30px] '>
                             <p className='text-[#FC387E] text-[24px]  font-semibold font-sans mb-[24px]  text-center'>CSS</p>
-                            <div className='w-[250px]  h-[248px] '>
+                            <div className='w-[250px] mx-auto  h-[248px] '>
                                 <CircularProgressbar
                                     styles={buildStyles({
                                         rotation: 0.25,
@@ -76,7 +76,7 @@ const Tools = () => {
                         data-aos-mirror="true">
                         <div className='rounded-[10px] bg-[#131313] border border-[#000] shadow-tools py-[50px] px-[30px] '>
                             <p className='text-[#F2C94C] text-[24px]  font-semibold font-sans mb-[24px]  text-center'>Illustrator</p>
-                            <div className='w-[250px]  h-[248px] '>
+                            <div className='w-[250px] mx-auto  h-[248px] '>
                                 <CircularProgressbar
                                     styles={buildStyles({
                                         rotation: 0.25,
@@ -102,7 +102,7 @@ const Tools = () => {
                         data-aos-mirror="true">
                         <div className='rounded-[10px] bg-[#131313] border border-[#000] shadow-tools py-[50px] px-[30px] '>
                             <p className='text-[#9747FF] text-[24px]  font-semibold font-sans mb-[24px]  text-center'>Photoshop</p>
-                            <div className='w-[250px]  h-[248px] '>
+                            <div className='w-[250px] mx-auto  h-[248px] '>
                                 <CircularProgressbar
                                     styles={buildStyles({
                                         rotation: 0.25,

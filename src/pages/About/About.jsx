@@ -7,7 +7,7 @@ import GetInTouch from '../../components/About/GetInTouch'
 
 const About = () => {
   return (
-    <div className='max-w-screen-xl mx-auto text-white '>
+    <div className='max-w-screen-xl text-white lg:mx-auto mx-[24px]'>
       <AboutBanner />
       <Sketches />
       <Photography />

@@ -10,14 +10,14 @@ const CaseStudy = () => {
     Aos.init();
     return (
         <>
-            <div className="bg-black pt-[120px] flex justify-center items-center flex-col text-white lg:m-0 m-[24px]">
+            <div className="bg-black pt-[120px] flex justify-center items-center flex-col text-white lg:m-0 m-[24px] overflow-auto">
                 <div className='mb-[71px]'>
                     <div data-aos="fade-bottom"
                         data-aos-offset="200"
                         data-aos-delay="50"
                         data-aos-duration="1000"
                         data-aos-easing="ease-in-out"
-                        data-aos-mirror="true" className='w-full overflow-x-hidden img-hover-zoom'>
+                        data-aos-mirror="true" className='w-full img-hover-zoom'>
                         <img className='mb-[41px] w-full' src={case_study1} alt="" />
                     </div>
                     <div className="text-center">

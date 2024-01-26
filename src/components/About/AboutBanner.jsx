@@ -10,7 +10,7 @@ const AboutBanner = () => {
 
     return (
         <>
-            <div className=" pt-[132px] mb-[105px] ">
+            <div className=" pt-[132px] mb-[105px] overflow-hidden   ">
                 <div className="grid items-center grid-cols-12 ">
                     <div className="col-span-12 lg:col-span-7">
                         <div className='font-normal font-outfit  lg:text-start  text-center lg:text-[68px] text-[40px] text-white mb-[36px]  '
@@ -40,12 +40,11 @@ const AboutBanner = () => {
                             data-aos-mirror="true">
 
                             Mastering the art of  structures led me to the art of <br /> user experiences, where I craft pixel-perfect designs that seamlessly bridge aesthetics and functionality. Transforming blueprints into beautiful interfaces, I <br /> thrive on the intersection of form and function, <br /> creating spaces in the digital landscape that not only <br /> look incredible but also feel intuitively right.
-
                         </p>
                         <p className='lg:text-[30px] text-[20px] font-outfit font-normal leading-normal lg:text-start  text-center overflow-x-hidden mt-[20px]'> Let's build a user-friendly world, one design at a time!</p>
                     </div>
-                    <div className="col-span-12 lg:col-span-5">
-                        <img src={aboutBanner} alt="" />
+                    <div className="col-span-12 lg:col-span-5 lg:mt-0 mt-[40px] ">
+                        <img src={aboutBanner} alt="aboutBanner" />
                     </div>
                 </div>
 
