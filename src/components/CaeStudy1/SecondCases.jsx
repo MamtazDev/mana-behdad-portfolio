@@ -19,7 +19,7 @@ import c16 from '../../assets/cc16.png'
 const SecondCases = () => {
     return (
         <div>
-            <div className='max-w-screen-xl mx-auto mt-[73px] '>
+            <div className='max-w-screen-xl mx-auto mt-[142px] '>
                 <div className='flex flex-col gap-[24px]'>
                     <div data-aos="fade-left"
                         data-aos-offset="200"

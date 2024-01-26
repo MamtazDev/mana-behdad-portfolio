@@ -23,7 +23,7 @@ const FirstCases = () => {
     Aos.init()
 
     return (
-        <div className='max-w-screen-xl mx-auto mt-[73px] overflow-hidden '>
+        <div className='max-w-screen-xl mx-auto mt-[142px] overflow-hidden '>
             <div className='flex flex-col gap-[24px]'>
                 <div className='img-hover-zoom' data-aos="fade-left"
                     data-aos-offset="200"

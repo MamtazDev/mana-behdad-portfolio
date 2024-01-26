@@ -3,7 +3,7 @@ import logo from '../../assets/logo.svg'
 import { Link, useLocation } from 'react-router-dom';
 
 const NavBar = () => {
-    
+
     const location = useLocation();
     const [isScrolled, setIsScrolled] = useState(false);
 
@@ -20,15 +20,15 @@ const NavBar = () => {
     }, []);
 
     const isAbsolute = location.pathname === '/' || location.pathname === '/skills' || location.pathname === '/work';
-
+    const isCases =location.pathname === '/firstCaseStudy' || location.pathname === '/secondCaseStudy' 
     const isActive = (path) => {
         return location.pathname === path;
     };
-    
+
     return (
         <header>
             <div className={`w-full ${isAbsolute ? 'absolute' : ''} z-50 w-full`}>
-                <nav className={`bg-${isScrolled ? 'black' : 'transparent'} pb-[40px] lg:mx-0 mx-[24px] fixed top-0 lg:w-[100%] w-[93%]`}>
+                <nav className={`bg-${isScrolled || isCases ? 'black' : 'transparent'} pb-[40px] lg:mx-0 mx-[24px] fixed top-0 lg:w-[100%] w-[93%]`}>
                     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto pt-[42px]">
                         <Link to="/" className="flex items-center gap-[24px] ">
                             <img src={logo} className="h-8" alt="Flowbite Logo" />
@@ -48,7 +48,7 @@ const NavBar = () => {
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link to="/about" className={isActive('/about') ? 'text-[#8BEAAD] text-xl font-outfit hover:text-[#8BEAAD]' : ' text-xl font-outfit hover:text-[#8BEAAD] lg:text-white text-white '} aria-current="page">
+                                    <Link to="#" className={isActive('/#') ? 'text-[#8BEAAD] text-xl font-outfit hover:text-[#8BEAAD]' : ' text-xl font-outfit hover:text-[#8BEAAD] lg:text-white text-white '} aria-current="page">
                                         About
                                     </Link>
                                 </li>
