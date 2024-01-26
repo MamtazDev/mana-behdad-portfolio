@@ -1,9 +1,24 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import logo from '../../assets/logo.svg'
 import { Link, useLocation } from 'react-router-dom';
 
 const NavBar = () => {
+    
     const location = useLocation();
+    const [isScrolled, setIsScrolled] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const scrollTop = window.scrollY;
+            const threshold = 100;
+            setIsScrolled(scrollTop > threshold);
+        };
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
     const isAbsolute = location.pathname === '/' || location.pathname === '/skills' || location.pathname === '/work';
 
     const isActive = (path) => {
@@ -12,8 +27,8 @@ const NavBar = () => {
     
     return (
         <header>
-            <div className={`w-full ${isAbsolute ? 'absolute' : ''} z-50 w-full `}>
-                <nav class="bg-transparent lg:mx-0 mx-[24px] fixed top-0 lg:w-[100%] w-[93%] ">
+            <div className={`w-full ${isAbsolute ? 'absolute' : ''} z-50 w-full`}>
+                <nav className={`bg-${isScrolled ? 'black' : 'transparent'} pb-[40px] lg:mx-0 mx-[24px] fixed top-0 lg:w-[100%] w-[93%]`}>
                     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto pt-[42px]">
                         <Link to="/" className="flex items-center gap-[24px] ">
                             <img src={logo} className="h-8" alt="Flowbite Logo" />
