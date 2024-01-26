@@ -12,12 +12,23 @@ import Aos from 'aos'
 const Photography = () => {
 
     Aos.init();
-
+    
     return (
 
         <div className='mb-[81px] overflow-hidden'>
-            <h2 className='text-[36px] font-Oswald  font-normal text-[#8BEAAD] mb-[19px]'>Photography</h2>
-            <p className='text-[24px] font-normal font-sans mb-[35px] '>Step into the human tapestry captured through my lens. In the photography section, faces become stories, and moments turn into emotions frozen in time.</p>
+            <h2 className='text-[36px] font-Oswald  font-normal text-[#8BEAAD] mb-[19px]' data-aos="fade-up"
+                data-aos-offset="200"
+                data-aos-delay="100"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
+                data-aos-mirror="true">Photography</h2>
+            <p className='text-[24px] font-normal font-sans mb-[35px] ' data-aos="fade-up"
+                data-aos-offset="200"
+                data-aos-delay="500"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
+                data-aos-mirror="true">Step into the human tapestry captured through my lens. In the photography section, faces become stories, and moments turn into emotions frozen in time.</p>
+           
             <div className='grid grid-cols-12 gap-[45px]'>
                 <div data-aos="fade-right"
                     data-aos-offset="200"

@@ -6,7 +6,6 @@ import user from '../../assets/user.png';
 import { Link } from 'react-router-dom';
 const Footer = () => {
   return (
-
     <>
       <div className='bg-black '>
         <div className="max-w-screen-xl lg:mx-auto mx-[24px] ">
@@ -18,14 +17,14 @@ const Footer = () => {
                 <span class="self-center text-white font-outfit text-2xl font-normal whitespace-nowrap ">MANA BEHDAD</span>
               </Link>
               <div className='flex  items-center  gap-[20px] '>
-                <img src={linkdin} alt="linkdin" />
-                <img src={email} alt="email" />
-                <img src={user} alt="user" />
+                <Link to="#"> <img src={linkdin} alt="linkdin" /></Link>
+                <Link to="#"> <img src={email} alt="email" /></Link>
+                <Link to="#"> <img src={user} alt="user" /></Link>
               </div>
             </div>
           </div>
           <div className='h-[1px] bg-[#FFFFFF4D] mb-[47px]'></div>
-          <p className='text-center text-[#FFFFFF80]   pb-[102px] texxt-base font-normal font-sans '>Mana Behdad (c) All Rights Reserved</p>
+          <p className='text-center text-[#FFFFFF80]   pb-[102px] texxt-base font-normal font-sans '>Mana Behdad &copy;  All Rights Reserved</p>
         </div>
       </div>
     </>

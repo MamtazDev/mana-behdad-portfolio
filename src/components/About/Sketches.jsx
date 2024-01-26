@@ -12,12 +12,22 @@ import Aos from 'aos'
 const Sketches = () => {
 
     Aos.init();
-    
+
     return (
         <>
             <div className='mb-[120px] overflow-hidden'>
-                <h2 className='text-[36px] font-Oswald  font-normal text-[#8BEAAD] mb-[19px]  '>Architectural Sketches</h2>
-                <p className='text-[24px] font-normal font-sans mb-[35px] '>From the initial spark of inspiration to the final flourish, these sketches are windows into the  architectural <br /> dreams I bring to life.</p>
+                <h2 className='text-[36px] font-Oswald  font-normal text-[#8BEAAD] mb-[19px]  ' data-aos="fade-up"
+                    data-aos-offset="200"
+                    data-aos-delay="100"
+                    data-aos-duration="1000"
+                    data-aos-easing="ease-in-out"
+                    data-aos-mirror="true">Architectural Sketches</h2>
+                <p className='text-[24px] font-normal font-sans mb-[35px] ' data-aos="fade-up"
+                    data-aos-offset="200"
+                    data-aos-delay="500"
+                    data-aos-duration="1000"
+                    data-aos-easing="ease-in-out"
+                    data-aos-mirror="true">From the initial spark of inspiration to the final flourish, these sketches are windows into the  architectural <br /> dreams I bring to life.</p>
                 <div className='grid grid-cols-12 gap-[45px]'>
                     <div data-aos="fade-right"
                         data-aos-offset="200"

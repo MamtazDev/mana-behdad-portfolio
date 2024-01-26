@@ -24,24 +24,29 @@ const AboutBanner = () => {
                             <ReactTyped style={{ color: "#8BEAAD" }} strings={["Mana"]} typeSpeed={150}
                                 backSpeed={150} loop />
                         </div>
-                        <p className='lg:text-[30px] text-[20px] font-outfit font-normal leading-normal my-[20px] lg:text-start  text-center overflow-x-hidden' data-aos="fade-left"
+                        <p className='lg:text-[30px] text-[20px] font-outfit font-normal leading-normal my-[20px] lg:text-start  text-center overflow-x-hidden' data-aos="fade-up"
                             data-aos-offset="200"
-                            data-aos-delay="50"
+                            data-aos-delay="100"
                             data-aos-duration="1000"
                             data-aos-easing="ease-in-out"
                             data-aos-mirror="true">
                             Architect by training, UX/UI designer by passion – I <br /> bring a unique blend of precision and creativity to the tech realm. <br />
                         </p>
-                        <p className='lg:text-[30px] text-[20px] font-outfit font-normal leading-normal lg:text-start  text-center overflow-x-hidden' data-aos="fade-left"
+                        <p className='lg:text-[30px] text-[20px] font-outfit font-normal leading-normal lg:text-start  text-center overflow-x-hidden' data-aos="fade-up"
                             data-aos-offset="200"
-                            data-aos-delay="50"
+                            data-aos-delay="500"
                             data-aos-duration="1000"
                             data-aos-easing="ease-in-out"
                             data-aos-mirror="true">
 
                             Mastering the art of  structures led me to the art of <br /> user experiences, where I craft pixel-perfect designs that seamlessly bridge aesthetics and functionality. Transforming blueprints into beautiful interfaces, I <br /> thrive on the intersection of form and function, <br /> creating spaces in the digital landscape that not only <br /> look incredible but also feel intuitively right.
                         </p>
-                        <p className='lg:text-[30px] text-[20px] font-outfit font-normal leading-normal lg:text-start  text-center overflow-x-hidden mt-[20px]'> Let's build a user-friendly world, one design at a time!</p>
+                        <p data-aos="fade-up"
+                            data-aos-offset="200"
+                            data-aos-delay="100"
+                            data-aos-duration="1000"
+                            data-aos-easing="ease-in-out"
+                            data-aos-mirror="true" className='lg:text-[30px] text-[20px] font-outfit font-normal leading-normal lg:text-start  text-center overflow-x-hidden mt-[20px]'> Let's build a user-friendly world, one design at a time!</p>
                     </div>
                     <div className="col-span-12 lg:col-span-5 lg:mt-0 mt-[40px] ">
                         <img src={aboutBanner} alt="aboutBanner" />

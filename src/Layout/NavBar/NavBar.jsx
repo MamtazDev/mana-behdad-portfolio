@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React from 'react';
 import logo from '../../assets/logo.svg'
 import { Link, useLocation } from 'react-router-dom';
 
@@ -9,13 +9,11 @@ const NavBar = () => {
     const isActive = (path) => {
         return location.pathname === path;
     };
-
-
-
+    
     return (
         <header>
             <div className={`w-full ${isAbsolute ? 'absolute' : ''} z-50 w-full `}>
-                <nav class="bg-transparent lg:mx-0 mx-[24px] ">
+                <nav class="bg-transparent lg:mx-0 mx-[24px] fixed top-0 lg:w-[100%] w-[93%] ">
                     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto pt-[42px]">
                         <Link to="/" className="flex items-center gap-[24px] ">
                             <img src={logo} className="h-8" alt="Flowbite Logo" />
