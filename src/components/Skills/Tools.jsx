@@ -3,6 +3,7 @@ import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import ChangingProgressProvider from './ChangingProgressProvider'
 
 const Tools = () => {
 
@@ -26,19 +27,35 @@ const Tools = () => {
                             <p className='text-[#58A274] text-[24px]  font-semibold font-sans mb-[24px]  text-center'>Html</p>
                             <div className='w-[250px] mx-auto  h-[248px] '>
                                 <CircularProgressbar
+                                    // styles={buildStyles({
+                                    //     rotation: 0.25,
+                                    //     strokeLinecap: 'butt',
+                                    //     textSize: '24px',
+                                    //     pathTransitionDuration : 0.5,
+                                    //     pathColor: `#6EEE9E`,
+                                    //     trailColor: `#262626`,
+                                    //     textColor: 'white',
+
+                                    // })}
                                     styles={buildStyles({
                                         rotation: 0.25,
-                                        strokeLinecap: 'butt',
+                                        strokeLinecap: 'butt', 
                                         textSize: '24px',
-                                        pathTransitionDuration: 0.5,
+                                        pathTransitionDuration: 1,
                                         pathColor: `#6EEE9E`,
                                         trailColor: `#262626`,
                                         textColor: 'white',
-
                                     })}
                                     value={`${80}`}
                                     text={`80%`}
                                 />
+                                {/* <Example label="Default animation speed">
+                                    <ChangingProgressProvider values={[0, 20, 40, 60]}>
+                                        {percentage => (
+                                            <CircularProgressbar value={80} text={`80%`} />
+                                        )}
+                                    </ChangingProgressProvider >
+                                </Example> */}
                             </div>
                         </div>
                     </div>
@@ -128,3 +145,19 @@ const Tools = () => {
 }
 
 export default Tools
+
+
+function Example(props) {
+    return (
+        <div style={{ marginBottom: 80 }}>
+            <hr style={{ border: "2px solid #ddd" }} />
+            <div style={{ marginTop: 30, display: "flex" }}>
+                <div style={{ width: "30%", paddingRight: 30 }}>{props.children}</div>
+                <div style={{ width: "70%" }}>
+                    <h3 className="h5">{props.label}</h3>
+                    <p>{props.description}</p>
+                </div>
+            </div>
+        </div>
+    );
+}

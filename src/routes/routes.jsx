@@ -23,18 +23,18 @@ export const router = createBrowserRouter([
                 path: '/work',
                 element: <Work />
             },
-            // {
-            //     path: '/firstCaseStudy',
-            //     element: <FirstCaseStudy />
-            // },
+            {
+                path: '/firstCaseStudy',
+                element: <FirstCaseStudy />
+            },
             {
                 path: '/secondCaseStudy',
                 element: <SecondCaseStudy />
             },
-            // {
-            //     path: '/about',
-            //     element: <About />
-            // }
+            {
+                path: '/about',
+                element: <About />
+            }
             ,
             {
                 path: '/skills',

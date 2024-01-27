@@ -17,29 +17,28 @@ import c15 from '../../assets/cc15.png'
 import c16 from '../../assets/cc16.png'
 
 const SecondCases = () => {
+
     return (
         <div>
             <div className='max-w-screen-xl mx-auto mt-[142px] '>
                 <div className='flex flex-col gap-[24px]'>
-                    <div  className='img-hover-zoom'> <img className='w-full' src={c1} alt="case-study" /></div>
-                    <div  className='img-hover-zoom'> <img className='w-full' src={c2} alt="case-study" /></div>
-                    <div  className='img-hover-zoom'> <img className='w-full' src={c3} alt="case-study" /></div>
-                    <div  className='img-hover-zoom'> <img className='w-full' src={c4} alt="case-study" /></div>
-                    <div  className='img-hover-zoom'> <img className='w-full' src={c5} alt="case-study" /></div>
-                    <div  className='img-hover-zoom'> <img className='w-full' src={c6} alt="case-study" /></div>
-                    <div  className='img-hover-zoom'> <img className='w-full' src={c7} alt="case-study" /></div>
-                    <div  className='img-hover-zoom'> <img className='w-full' src={c8} alt="case-study" /></div>
-                    <div  className='img-hover-zoom'> <img className='w-full' src={c9} alt="case-study" /></div>
-                    <div  className='img-hover-zoom'> <img className='w-full' src={c10} alt="case_study" /></div>
-                    <div  className='img-hover-zoom'> <img className='w-full' src={c11} alt="case_study" /></div>
-                    <div  className='img-hover-zoom'> <img className='w-full' src={c12} alt="case_study" /></div>
-                    <div  className='img-hover-zoom'> <img className='w-full' src={c13} alt="case_study" /></div>
-                    <div  className='img-hover-zoom'> <img className='w-full' src={c14} alt="case_study" /></div>
-                    <div  className='img-hover-zoom'> <img className='w-full' src={c15} alt="case_study" /></div>
-                    <div  className='img-hover-zoom'> <img className='w-full' src={c16} alt="case_study" /></div>
+                    <div> <img className='w-full' src={c1} alt="case-study" /></div>
+                    <div> <img className='w-full' src={c2} alt="case-study" /></div>
+                    <div> <img className='w-full' src={c3} alt="case-study" /></div>
+                    <div> <img className='w-full' src={c4} alt="case-study" /></div>
+                    <div> <img className='w-full' src={c5} alt="case-study" /></div>
+                    <div> <img className='w-full' src={c6} alt="case-study" /></div>
+                    <div> <img className='w-full' src={c7} alt="case-study" /></div>
+                    <div> <img className='w-full' src={c8} alt="case-study" /></div>
+                    <div> <img className='w-full' src={c9} alt="case-study" /></div>
+                    <div> <img className='w-full' src={c10} alt="case_study" /></div>
+                    <div> <img className='w-full' src={c11} alt="case_study" /></div>
+                    <div> <img className='w-full' src={c12} alt="case_study" /></div>
+                    <div> <img className='w-full' src={c13} alt="case_study" /></div>
+                    <div> <img className='w-full' src={c14} alt="case_study" /></div>
+                    <div> <img className='w-full' src={c15} alt="case_study" /></div>
+                    <div> <img className='w-full' src={c16} alt="case_study" /></div>
                 </div>
-
-
             </div>
         </div>
     )

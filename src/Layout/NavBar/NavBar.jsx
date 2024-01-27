@@ -48,7 +48,7 @@ const NavBar = () => {
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link to="#" className={isActive('/#') ? 'text-[#8BEAAD] text-xl font-outfit hover:text-[#8BEAAD]' : ' text-xl font-outfit hover:text-[#8BEAAD] lg:text-white text-white '} aria-current="page">
+                                    <Link to="/about" className={isActive('/#') ? 'text-[#8BEAAD] text-xl font-outfit hover:text-[#8BEAAD]' : ' text-xl font-outfit hover:text-[#8BEAAD] lg:text-white text-white '} aria-current="page">
                                         About
                                     </Link>
                                 </li>
