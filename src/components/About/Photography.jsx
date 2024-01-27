@@ -16,13 +16,13 @@ const Photography = () => {
     return (
 
         <div className='mb-[81px] overflow-hidden'>
-            <h2 className='text-[36px] font-Oswald  font-normal text-[#8BEAAD] mb-[19px]' data-aos="fade-up"
+            <h2 className='text-[36px] font-Oswald  font-normal text-[#8BEAAD] mb-[19px] lg:text-start text-center ' data-aos="fade-up"
                 data-aos-offset="200"
                 data-aos-delay="100"
                 data-aos-duration="1000"
                 data-aos-easing="ease-in-out"
                 data-aos-mirror="true">Photography</h2>
-            <p className='text-[24px] font-normal font-sans mb-[35px] ' data-aos="fade-up"
+            <p className='text-[24px] font-normal font-sans mb-[35px]  lg:text-start text-center ' data-aos="fade-up"
                 data-aos-offset="200"
                 data-aos-delay="500"
                 data-aos-duration="1000"

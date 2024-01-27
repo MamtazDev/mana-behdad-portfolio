@@ -11,12 +11,12 @@ const Footer = () => {
         <div className="max-w-screen-xl lg:mx-auto mx-[24px] ">
           <div className='h-[1px] bg-[#FFFFFF4D]'></div>
           <div className='py-[47px] w-full'>
-            <div className="flex items-center justify-between" >
+            <div className="flex lg:flex-row flex-col items-center lg:gap-0 gap-[30px] lg:justify-between justify-center " >
               <Link to="/" class="flex items-center space-x-3 rtl:space-x-reverse">
                 <img src={logo} class="h-8" alt="Logo" />
                 <span class="self-center text-white font-outfit text-2xl font-normal whitespace-nowrap ">MANA BEHDAD</span>
               </Link>
-              <div className='flex  items-center  gap-[20px] '>
+              <div className='flex  items-center  gap-[20px]'>
                 <Link to="#"> <img src={linkdin} alt="linkdin" /></Link>
                 <Link to="#"> <img src={email} alt="email" /></Link>
                 <Link to="#"> <img src={user} alt="user" /></Link>

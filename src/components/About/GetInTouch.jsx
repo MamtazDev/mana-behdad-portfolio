@@ -23,7 +23,7 @@ const GetInTouch = () => {
                     data-aos-mirror="true" className='lg:text-[24px] text-[20px] font-semibold font-sans mb-[53px] '>Excited to embark on a design journey together? Let's connect and transform your ideas into a stunning digital reality! Your vision, my design – let's make your project shine!</p>
                 <button data-aos="fade-up"
                     data-aos-offset="200"
-                    data-aos-delay="500"
+                    data-aos-delay="1000"
                     data-aos-duration="1000"
                     data-aos-easing="ease-in-out"
                     data-aos-mirror="true" className='text-[24px] font-semibold font-sans lg:py-[20px] py-[10px] lg:px-[60px] px-[30px] hover:text-[#53906A] rounded-[12px] bg-[#53906A] border border-[#53906A] hover:bg-transparent '>Let’s Connect</button>

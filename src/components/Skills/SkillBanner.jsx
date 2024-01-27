@@ -15,7 +15,7 @@ const SkillBanner = () => {
                     data-aos-duration="1000"
                     data-aos-easing="ease-in-out"
                     data-aos-mirror="true">
-                    Empowered by a
+                    Empowered by 
                     a <span className='text-[#8BEAAD]'>diverse  <br className='hidden lg:flex' /> skill set</span>
                     ,<br className='flex lg:hidden' /> I navigate the  <br /> landscape of UI/UX design <br className='hidden lg:flex' /> with finesse
                 </h1>
