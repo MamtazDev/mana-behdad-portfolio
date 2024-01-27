@@ -7,11 +7,13 @@ import arrow from '../../../assets/arrow.png'
 import { Link } from 'react-router-dom'
 import Aos from 'aos';
 import 'aos/dist/aos.css';
+import ChartContainer from '../../Skills/ChartBox'
 
 const CaseStudy = () => {
 
     Aos.init();
     const [isHovered, setIsHovered] = useState(false);
+    const [isHovered2, setIsHovered2] = useState(false);
 
     const handleMouseOver = () => {
         setIsHovered(true);
@@ -20,9 +22,17 @@ const CaseStudy = () => {
     const handleMouseOut = () => {
         setIsHovered(false);
     };
+    const handleMouseOver2 = () => {
+        setIsHovered2(true);
+    };
+
+    const handleMouseOut2 = () => {
+        setIsHovered2(false);
+    };
 
     return (
         <>
+            <ChartContainer />
             <div className="bg-black pt-[120px] flex justify-center items-center flex-col text-white lg:m-0 m-[24px] overflow-auto">
                 <div className='mb-[71px]'>
                     <div data-aos="fade-up"
@@ -31,17 +41,18 @@ const CaseStudy = () => {
                         data-aos-duration="1000"
                         data-aos-easing="ease-in-out"
                         data-aos-mirror="true" className='w-full '>
-                        {/* <img className='mb-[41px] w-full' src={case_study1} alt="" /> */}
-                        <img
-                        className='mb-[41px] w-full transition duration-300 ease-in-out  '
-                        src={isHovered ? case_studyhover1 : case_study1}
-                        alt=""
-                        onMouseOver={handleMouseOver}
-                        onMouseOut={handleMouseOut}
-                        />
+                        <Link to="/firstCaseStudy">
+                            <img
+                                className='mb-[41px] w-full transition duration-300 ease-in-out cursor-pointer  '
+                                src={isHovered ? case_studyhover1 : case_study1}
+                                alt=""
+                                onMouseOver={handleMouseOver}
+                                onMouseOut={handleMouseOut}
+                            />
+                        </Link>
                     </div>
                     <div className="text-center">
-                        <Link to="#" data-aos="fade-up"
+                        <Link to="/firstCaseStudy" data-aos="fade-up"
                             data-aos-offset="200"
                             data-aos-delay="500"
                             data-aos-duration="1000"
@@ -58,15 +69,13 @@ const CaseStudy = () => {
                         data-aos-duration="1000"
                         data-aos-easing="ease-in-out"
                         data-aos-mirror="true" className='w-full overflow-x-hidden '>
-                        {/* <img className='mb-[41px] w-full' src={case_study2} alt="" />
-                        <img className='mb-[41px] w-full' src={case_studyhover1} alt="" /> */}
-                        <img
-                            className='mb-[41px] w-full transition duration-300 ease-in-out  '
-                            src={isHovered ? case_studyhover2 : case_study2}
+                        <Link to="/secondCaseStudy"><img
+                            className='mb-[41px] w-full transition duration-300 ease-in-out  cursor-pointer '
+                            src={isHovered2 ? case_studyhover2 : case_study2}
                             alt=""
-                            onMouseOver={handleMouseOver}
-                            onMouseOut={handleMouseOut}
-                        />
+                            onMouseOver={handleMouseOver2}
+                            onMouseOut={handleMouseOut2}
+                        /></Link>
                     </div>
                     <Link to="/secondCaseStudy" data-aos="fade-right"
                         data-aos-offset="200"

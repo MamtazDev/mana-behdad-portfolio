@@ -1,7 +1,7 @@
 import React from 'react'
-import c1 from '../../assets/c1.png'
-import c2 from '../../assets/c2.png'
-import c3 from '../../assets/c3.png'
+import c1 from '../../assets/c1.svg'
+import c2 from '../../assets/c2.jpg'
+import c3 from '../../assets/c3.jpg'
 import c4 from '../../assets/c4.png'
 import c5 from '../../assets/c5.png'
 import c6 from '../../assets/c6.png'
@@ -18,12 +18,65 @@ import c16 from '../../assets/c16.png'
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 
+const data = [
+    {
+        img: c1
+    },
+    {
+        img: c2
+    },
+    {
+        img: c3
+    },
+    {
+        img: c4
+    },
+    {
+        img: c5
+    },
+    {
+        img: c6
+    },
+    {
+        img: c7
+    },
+    {
+        img: c8
+    },
+    {
+        img: c9
+    },
+    {
+        img: c10
+    },
+    {
+        img: c11
+    },
+    {
+        img: c12
+    },
+    {
+        img: c13
+    },
+    {
+        img: c14
+    },
+    {
+        img: c15
+    },
+    {
+        img: c16
+    },
+
+]
+
+
 const FirstCases = () => {
 
     Aos.init()
 
     return (
-        <div className='max-w-screen-xl mx-auto mt-[142px] overflow-hidden '>
+        <div className='mt-[142px] overflow-hidden '>
             <div className='flex flex-col gap-[24px]'>
                 <div data-aos="fade-left"
                     data-aos-offset="200"

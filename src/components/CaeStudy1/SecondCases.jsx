@@ -6,10 +6,10 @@ import c4 from '../../assets/cc4.png'
 import c5 from '../../assets/cc5.png'
 import c6 from '../../assets/cc6.png'
 import c7 from '../../assets/cc7.png'
-import c8 from '../../assets/cc81.png'
-import c9 from '../../assets/cc8.png'
-import c10 from '../../assets/cc9.png'
-import c11 from '../../assets/cc10.png'
+import c8 from '../../assets/cc8.png'
+import c9 from '../../assets/cc9.png'
+import c10 from '../../assets/cc10.png'
+import c11 from '../../assets/cc11.png'
 import c12 from '../../assets/cc12.png'
 import c13 from '../../assets/cc13.png'
 import c14 from '../../assets/cc14.png'
@@ -20,8 +20,8 @@ const SecondCases = () => {
 
     return (
         <div>
-            <div className='max-w-screen-xl mx-auto mt-[142px] '>
-                <div className='flex flex-col gap-[24px]'>
+            <div className='mt-[142px] mb-[96px]'>
+                <div className='flex flex-col'>
                     <div> <img className='w-full' src={c1} alt="case-study" /></div>
                     <div> <img className='w-full' src={c2} alt="case-study" /></div>
                     <div> <img className='w-full' src={c3} alt="case-study" /></div>

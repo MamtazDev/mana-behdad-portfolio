@@ -35,11 +35,10 @@ const Tools = () => {
                                     //     pathColor: `#6EEE9E`,
                                     //     trailColor: `#262626`,
                                     //     textColor: 'white',
-
                                     // })}
                                     styles={buildStyles({
                                         rotation: 0.25,
-                                        strokeLinecap: 'butt', 
+                                        strokeLinecap: 'butt',
                                         textSize: '24px',
                                         pathTransitionDuration: 1,
                                         pathColor: `#6EEE9E`,
