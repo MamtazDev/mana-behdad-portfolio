@@ -46,6 +46,40 @@
     }
 }
 
-.CircularProgressbar .CircularProgressbar-text{
-    font-weight: 600;
-}
+
+.progress-bar {
+    position: relative;
+    width: 250px;
+    height: 250px;
+  }
+  
+  .progress {
+    transform: rotate(-90deg);
+  }
+  
+  .circle-bg,
+  .circle {
+    fill: none;
+    stroke-width: 3.8;
+  }
+  
+  .circle-bg {
+    stroke: #eee;
+  }
+  
+  .circle {
+    stroke-linecap: butt;
+    transform-origin: center;
+    transition: stroke-dashoffset 1s;
+    transform: rotate(180deg);
+  }
+  
+  .progress-value {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5em;
+    color: #fff;
+  }
+  

@@ -3,7 +3,8 @@ import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import ChangingProgressProvider from './ChangingProgressProvider'
+import CircularProgressBar from './CircularProgressBar';
+import AnimatedCircularProgressBar from './AnimatedCircularProgressBar';
 
 const Tools = () => {
 
@@ -26,35 +27,13 @@ const Tools = () => {
                         <div className='rounded-[10px] bg-[#131313] border border-[#000] shadow-tools py-[50px] px-[30px] '>
                             <p className='text-[#58A274] text-[24px]  font-semibold font-sans mb-[24px]  text-center'>Html</p>
                             <div className='w-[250px] mx-auto  h-[248px] '>
-                                <CircularProgressbar
-                                    // styles={buildStyles({
-                                    //     rotation: 0.25,
-                                    //     strokeLinecap: 'butt',
-                                    //     textSize: '24px',
-                                    //     pathTransitionDuration : 0.5,
-                                    //     pathColor: `#6EEE9E`,
-                                    //     trailColor: `#262626`,
-                                    //     textColor: 'white',
-                                    // })}
-                                    styles={buildStyles({
-                                        rotation: 0.25,
-                                        strokeLinecap: 'butt',
-                                        textSize: '24px',
-                                        pathTransitionDuration: 1,
-                                        pathColor: `#6EEE9E`,
-                                        trailColor: `#262626`,
-                                        textColor: 'white',
-                                    })}
-                                    value={`${80}`}
-                                    text={`80%`}
+                                <AnimatedCircularProgressBar
+                                    progress={80}
+                                    startColor="#6EEE9E"
+                                    endColor="#53906A"
                                 />
-                                {/* <Example label="Default animation speed">
-                                    <ChangingProgressProvider values={[0, 20, 40, 60]}>
-                                        {percentage => (
-                                            <CircularProgressbar value={80} text={`80%`} />
-                                        )}
-                                    </ChangingProgressProvider >
-                                </Example> */}
+
+
                             </div>
                         </div>
                     </div>
@@ -67,20 +46,14 @@ const Tools = () => {
                         <div className='rounded-[10px] bg-[#131313] border border-[#000] shadow-tools py-[50px] px-[30px] '>
                             <p className='text-[#FC387E] text-[24px]  font-semibold font-sans mb-[24px]  text-center'>CSS</p>
                             <div className='w-[250px] mx-auto  h-[248px] '>
-                                <CircularProgressbar
-                                    styles={buildStyles({
-                                        rotation: 0.25,
-                                        strokeLinecap: 'butt',
-                                        textSize: '24px',
-                                        pathTransitionDuration: 0.5,
-                                        pathColor: `#FC387E`,
-                                        trailColor: `#262626`,
-                                        textColor: 'white',
 
-                                    })}
-                                    value={`${75}`}
-                                    text={`75%`}
+                                <AnimatedCircularProgressBar
+                                    progress={75}
+                                    startColor="#FC387E"
+                                    endColor="#AB5171"
                                 />
+
+
                             </div>
                         </div>
                     </div>
@@ -93,20 +66,13 @@ const Tools = () => {
                         <div className='rounded-[10px] bg-[#131313] border border-[#000] shadow-tools py-[50px] px-[30px] '>
                             <p className='text-[#F2C94C] text-[24px]  font-semibold font-sans mb-[24px]  text-center'>Illustrator</p>
                             <div className='w-[250px] mx-auto  h-[248px] '>
-                                <CircularProgressbar
-                                    styles={buildStyles({
-                                        rotation: 0.25,
-                                        strokeLinecap: 'butt',
-                                        textSize: '24px',
-                                        pathTransitionDuration: 0.5,
-                                        pathColor: `#F2C94C`,
-                                        trailColor: `#262626`,
-                                        textColor: 'white',
-
-                                    })}
-                                    value={`${85}`}
-                                    text={`85%`}
+                              
+                                <AnimatedCircularProgressBar
+                                    progress={85}
+                                    startColor="#B87238"
+                                    endColor="#F2C94C"
                                 />
+
                             </div>
                         </div>
                     </div>
@@ -119,19 +85,11 @@ const Tools = () => {
                         <div className='rounded-[10px] bg-[#131313] border border-[#000] shadow-tools py-[50px] px-[30px] '>
                             <p className='text-[#9747FF] text-[24px]  font-semibold font-sans mb-[24px]  text-center'>Photoshop</p>
                             <div className='w-[250px] mx-auto  h-[248px] '>
-                                <CircularProgressbar
-                                    styles={buildStyles({
-                                        rotation: 0.25,
-                                        strokeLinecap: 'butt',
-                                        textSize: '24px',
-                                        pathTransitionDuration: 0.5,
-                                        pathColor: `#9747FF`,
-                                        trailColor: `#262626`,
-                                        textColor: 'white',
-
-                                    })}
-                                    value={`${90}`}
-                                    text={`90%`}
+                               
+                                <AnimatedCircularProgressBar
+                                    progress={90}
+                                    startColor="#C598FF"
+                                    endColor="#9747FF"
                                 />
                             </div>
                         </div>
