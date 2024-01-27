@@ -1,9 +1,7 @@
 import React from 'react';
-import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import CircularProgressBar from './CircularProgressBar';
 import AnimatedCircularProgressBar from './AnimatedCircularProgressBar';
 
 const Tools = () => {
@@ -29,11 +27,9 @@ const Tools = () => {
                             <div className='w-[250px] mx-auto  h-[248px] '>
                                 <AnimatedCircularProgressBar
                                     progress={80}
-                                    startColor="#6EEE9E"
-                                    endColor="#53906A"
+                                    startColor="#53906A"
+                                    endColor="#6EEE9E"
                                 />
-
-
                             </div>
                         </div>
                     </div>
@@ -66,11 +62,11 @@ const Tools = () => {
                         <div className='rounded-[10px] bg-[#131313] border border-[#000] shadow-tools py-[50px] px-[30px] '>
                             <p className='text-[#F2C94C] text-[24px]  font-semibold font-sans mb-[24px]  text-center'>Illustrator</p>
                             <div className='w-[250px] mx-auto  h-[248px] '>
-                              
+
                                 <AnimatedCircularProgressBar
                                     progress={85}
-                                    startColor="#B87238"
-                                    endColor="#F2C94C"
+                                    startColor="#F2C94C"
+                                    endColor="#B87238"
                                 />
 
                             </div>
@@ -85,7 +81,7 @@ const Tools = () => {
                         <div className='rounded-[10px] bg-[#131313] border border-[#000] shadow-tools py-[50px] px-[30px] '>
                             <p className='text-[#9747FF] text-[24px]  font-semibold font-sans mb-[24px]  text-center'>Photoshop</p>
                             <div className='w-[250px] mx-auto  h-[248px] '>
-                               
+
                                 <AnimatedCircularProgressBar
                                     progress={90}
                                     startColor="#C598FF"
