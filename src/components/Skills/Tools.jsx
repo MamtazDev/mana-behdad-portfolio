@@ -84,13 +84,12 @@ const Tools = () => {
 
                                 <AnimatedCircularProgressBar
                                     progress={90}
-                                    startColor="#C598FF"
-                                    endColor="#9747FF"
+                                    startColor="#9747FF"
+                                    endColor="#C598FF"
                                 />
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </>
