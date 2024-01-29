@@ -17,8 +17,8 @@ const Footer = () => {
                 <span class="self-center text-white font-outfit text-2xl font-normal whitespace-nowrap ">MANA BEHDAD</span>
               </Link>
               <div className='flex  items-center  gap-[20px]'>
-                <Link to="#"> <img src={linkdin} alt="linkdin" /></Link>
-                <Link to="#"> <img src={email} alt="email" /></Link>
+                <Link to="https://www.linkedin.com/in/mana-behdad-53949141?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"> <img src={linkdin} alt="linkdin" /></Link>
+                <Link to="mailto:mana.behdad@gmail.com"><img src={email} alt="email" /></Link>
                 <Link to="#"> <img src={user} alt="user" /></Link>
               </div>
             </div>

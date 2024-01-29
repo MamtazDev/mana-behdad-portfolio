@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import logo from '../../assets/logo.svg'
 import { Link, useLocation } from 'react-router-dom';
-
+import resume from '../../assets/resume.pdf'
 const NavBar = () => {
 
     const location = useLocation();
@@ -24,6 +24,15 @@ const NavBar = () => {
         return location.pathname === path;
     };
 
+    const handleDownload = () => {
+
+        const link = document.createElement('a');
+        link.href = resume;
+        link.download = 'resume.pdf';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    };
     return (
         <header>
             <div className={`w-full ${isAbsolute ? 'absolute' : ''} z-50 w-full`}>
@@ -58,7 +67,7 @@ const NavBar = () => {
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link to="#" className={isActive('#') ? 'text-[#8BEAAD] text-xl font-outfit hover:text-[#8BEAAD]' : ' text-xl font-outfit hover:text-[#8BEAAD] lg:text-white text-white '} aria-current="page">
+                                    <Link onClick={handleDownload} to="#" className={isActive('#') ? 'text-[#8BEAAD] text-xl font-outfit hover:text-[#8BEAAD]' : ' text-xl font-outfit hover:text-[#8BEAAD] lg:text-white text-white '} aria-current="page">
                                         Resume
                                     </Link>
                                 </li>
