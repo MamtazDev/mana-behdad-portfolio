@@ -10,7 +10,7 @@ const AboutBanner = () => {
 
     return (
         <>
-            <div className=" pt-[132px] mb-[105px] overflow-hidden   ">
+            <div className=" pt-[204px] mb-[105px] overflow-hidden   ">
                 <div className="grid items-center grid-cols-12 ">
                     <div className="col-span-12 lg:col-span-7">
                         <div className='font-normal font-outfit  lg:text-start  text-center lg:text-[68px] text-[40px] text-white mb-[36px]  '
