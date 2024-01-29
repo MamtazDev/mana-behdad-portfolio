@@ -7,7 +7,6 @@ import arrow from '../../../assets/arrow.png'
 import { Link } from 'react-router-dom'
 import Aos from 'aos';
 import 'aos/dist/aos.css';
-import ChartContainer from '../../Skills/ChartBox'
 
 const CaseStudy = () => {
 
@@ -32,7 +31,6 @@ const CaseStudy = () => {
 
     return (
         <>
-            <ChartContainer />
             <div className="bg-black pt-[120px] flex justify-center items-center flex-col text-white lg:m-0 m-[24px] overflow-auto">
                 <div className='mb-[71px]'>
                     <div data-aos="fade-up"
