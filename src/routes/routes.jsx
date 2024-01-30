@@ -9,7 +9,6 @@ import SecondCaseStudy from "../pages/CaseStudy/SecondCaseStudy";
 import About from "../pages/About/About";
 import Skills from "../pages/Skills/Skills";
 
-
 export const router = createBrowserRouter([
     {
         path: "/",
