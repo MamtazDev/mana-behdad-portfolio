@@ -67,7 +67,7 @@ const NavBar = () => {
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link onClick={handleDownload} to="#" className={isActive('#') ? 'text-[#8BEAAD] text-xl font-outfit hover:text-[#8BEAAD]' : ' text-xl font-outfit hover:text-[#8BEAAD] lg:text-white text-white '} aria-current="page">
+                                    <Link target='black' to="https://drive.google.com/file/d/1VsqKRVSTcuCiryr9BHbGlpJDBKFNWO08/view?usp=sharing" className={isActive('#') ? 'text-[#8BEAAD] text-xl font-outfit hover:text-[#8BEAAD]' : ' text-xl font-outfit hover:text-[#8BEAAD] lg:text-white text-white '} aria-current="page">
                                         Resume
                                     </Link>
                                 </li>
