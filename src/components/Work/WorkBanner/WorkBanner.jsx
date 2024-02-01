@@ -31,7 +31,7 @@ const WorkBanner = () => {
           data-aos-duration="1000"
           data-aos-easing="ease-in-out"
           data-aos-mirror="true">
-          Architect turned UX/UI enthusiast. I design digita
+          Architect turned UX/UI enthusiast. I design digital
           <br className='hidden lg:flex' />  spaces where form meets function, weaving
           <br className='hidden lg:flex' />
           aesthetics and user experience seamlessly. Join me in

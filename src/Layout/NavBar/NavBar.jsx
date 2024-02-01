@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import logo from '../../assets/logo.svg'
 import { Link, useLocation } from 'react-router-dom';
-import resume from '../../assets/resume.pdf'
+
 const NavBar = () => {
 
     const location = useLocation();
@@ -23,16 +23,7 @@ const NavBar = () => {
     const isActive = (path) => {
         return location.pathname === path;
     };
-
-    const handleDownload = () => {
-
-        const link = document.createElement('a');
-        link.href = resume;
-        link.download = 'resume.pdf';
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-    };
+    
     return (
         <header>
             <div className={`w-full ${isAbsolute ? 'absolute' : ''} z-50 w-full`}>

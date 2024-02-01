@@ -1,5 +1,5 @@
 import {
-    createBrowserRouter
+    createBrowserRouter, useLocation
 } from "react-router-dom";
 
 import Layout from "../Layout/Layout";
@@ -8,11 +8,28 @@ import FirstCaseStudy from "../pages/CaseStudy/FirstCaseStudy";
 import SecondCaseStudy from "../pages/CaseStudy/SecondCaseStudy";
 import About from "../pages/About/About";
 import Skills from "../pages/Skills/Skills";
+import { useEffect } from "react";
+
+const ScrollToTop = () => {
+    const location = useLocation();
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [location.key]);
+
+    return null;
+};
 
 export const router = createBrowserRouter([
     {
         path: "/",
-        element: <Layout />,
+        element: (
+            <>
+                <ScrollToTop />
+                <Layout />
+
+            </>
+        ),
         children: [
             {
                 path: '/',

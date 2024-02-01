@@ -4,7 +4,9 @@ import linkdin from '../../assets/linkdin.png';
 import email from '../../assets/email.png';
 import user from '../../assets/user.png';
 import { Link } from 'react-router-dom';
+
 const Footer = () => {
+  
   return (
     <>
       <div className='bg-black '>
@@ -19,7 +21,8 @@ const Footer = () => {
               <div className='flex  items-center  gap-[20px]'>
                 <Link target='blank' to="https://www.linkedin.com/in/mana-behdad-53949141?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"> <img src={linkdin} alt="linkdin" /></Link>
                 <Link to="mailto:mana.behdad@gmail.com"><img src={email} alt="email" /></Link>
-                <Link to="#"> <img src={user} alt="user" /></Link>
+                <Link target='black' to="https://drive.google.com/file/d/1VsqKRVSTcuCiryr9BHbGlpJDBKFNWO08/view?usp=sharing" > <img src={user} alt="user" /></Link>
+               
               </div>
             </div>
           </div>
