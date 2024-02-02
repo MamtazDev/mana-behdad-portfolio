@@ -15,8 +15,10 @@ import c13 from '../../assets/c13.png'
 import c14 from '../../assets/c14.png'
 import c15 from '../../assets/c15.png'
 import c16 from '../../assets/c16.png'
+import button1 from '../../assets/button1.png'
 import Aos from 'aos';
 import 'aos/dist/aos.css';
+import { Link } from 'react-router-dom'
 
 
 const FirstCases = () => {
@@ -25,13 +27,22 @@ const FirstCases = () => {
 
   return (
     <div className='max-w-screen-xl mx-auto mt-[142px] overflow-hidden '>
+
       <div className='flex flex-col gap-[24px]'>
         <div data-aos="fade-up"
           data-aos-offset="200"
           data-aos-delay="100"
           data-aos-duration="1000"
           data-aos-easing="ease-in-out"
-        > <img className='w-full border border-black' src={c1} alt="case-study" /></div>
+          className='relative'
+        >
+          <img className='w-full border border-black' src={c1} alt="case-study" />
+          <div className='absolute bottom-[114px] left-[50px] '>
+            <Link target='blank' to="https://www.figma.com/proto/d3rAuI8yfij5Yofn3xr0Mg/App-Case-Study-(Portfolio-Work)?type=design&node-id=2-5367&t=ToyhalCdxpkVmR8q-1&scaling=min-zoom&page-id=2%3A2226&mode=design"> <button className='h-[66px]'>
+              <img src={button1} alt="" />
+            </button></Link>
+          </div>
+        </div>
         <div data-aos="fade-up"
           data-aos-offset="200"
           data-aos-delay="100"

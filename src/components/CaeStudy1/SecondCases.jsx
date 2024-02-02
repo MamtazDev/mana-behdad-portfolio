@@ -15,6 +15,8 @@ import c13 from '../../assets/cc13.png'
 import c14 from '../../assets/cc14.png'
 import c15 from '../../assets/cc15.png'
 import c16 from '../../assets/cc16.png'
+import { Link } from 'react-router-dom';
+import button2 from '../../assets/button2.png'
 
 const SecondCases = () => {
 
@@ -22,7 +24,13 @@ const SecondCases = () => {
         <div>
             <div className='max-w-screen-xl mx-auto mt-[142px] mb-[96px]'>
                 <div className='flex flex-col'>
-                    <div> <img className='w-full' src={c1} alt="case-study" /></div>
+                    <div className='relative'> <img className='w-full' src={c1} alt="case-study" />
+                        <div className='absolute bottom-[108px] left-[50px] '>
+                            <Link target="blank" to="https://www.figma.com/proto/nll4j9bpP58VV9zpG8ZsD7/Project-02-(Website-Case-Study)?type=design&node-id=2-2778&t=yA84SqsCoLmFCJhL-1&scaling=min-zoom&page-id=0%3A1&mode=design"> <button className='h-[66px]'>
+                                <img src={button2} alt="" />
+                            </button></Link>
+                        </div>
+                    </div>
                     <div> <img className='w-full' src={c2} alt="case-study" /></div>
                     <div> <img className='w-full' src={c3} alt="case-study" /></div>
                     <div> <img className='w-full' src={c4} alt="case-study" /></div>
