@@ -26,7 +26,7 @@ const FirstCases = () => {
   Aos.init()
 
   return (
-    <div className='max-w-screen-xl mx-auto mt-[142px] overflow-hidden '>
+    <div className='max-w-screen-xl mx-auto lg:mt-[142px] mt-[121px] overflow-hidden '>
 
       <div className='flex flex-col gap-[24px]'>
         <div data-aos="fade-up"
@@ -37,9 +37,9 @@ const FirstCases = () => {
           className='relative'
         >
           <img className='w-full border border-black' src={c1} alt="case-study" />
-          <div className='absolute bottom-[114px] left-[50px] '>
+          <div className='absolute lg:bottom-[114px] bottom-[17px] lg:left-[50px] left-[18px] '>
             <Link target='blank' to="https://www.figma.com/proto/d3rAuI8yfij5Yofn3xr0Mg/App-Case-Study-(Portfolio-Work)?type=design&node-id=2-5367&t=ToyhalCdxpkVmR8q-1&scaling=min-zoom&page-id=2%3A2226&mode=design"> <button className='h-[66px]'>
-              <img src={button1} alt="" />
+              <img className='lg:h-[100%] h-[20px]  ' src={button1} alt="" />
             </button></Link>
           </div>
         </div>

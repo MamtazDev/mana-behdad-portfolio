@@ -22,7 +22,7 @@ const SecondCases = () => {
 
     return (
         <div>
-            <div className='max-w-screen-xl mx-auto mt-[142px] mb-[96px]'>
+            <div className='max-w-screen-xl mx-auto lg:mt-[142px] mt-[121px] mb-[96px]'>
                 <div className='flex flex-col'>
                     <div className='relative'> <img className='w-full' src={c1} alt="case-study" />
                         <div className='absolute bottom-[108px] left-[50px] '>
@@ -31,21 +31,81 @@ const SecondCases = () => {
                             </button></Link>
                         </div>
                     </div>
-                    <div> <img className='w-full' src={c2} alt="case-study" /></div>
-                    <div> <img className='w-full' src={c3} alt="case-study" /></div>
-                    <div> <img className='w-full' src={c4} alt="case-study" /></div>
-                    <div> <img className='w-full' src={c5} alt="case-study" /></div>
-                    <div> <img className='w-full' src={c6} alt="case-study" /></div>
-                    <div> <img className='w-full' src={c7} alt="case-study" /></div>
-                    <div> <img className='w-full' src={c8} alt="case-study" /></div>
-                    <div> <img className='w-full' src={c9} alt="case-study" /></div>
-                    <div> <img className='w-full' src={c10} alt="case_study" /></div>
-                    <div> <img className='w-full' src={c11} alt="case_study" /></div>
-                    <div> <img className='w-full' src={c12} alt="case_study" /></div>
-                    <div> <img className='w-full' src={c13} alt="case_study" /></div>
-                    <div> <img className='w-full' src={c14} alt="case_study" /></div>
-                    <div> <img className='w-full' src={c15} alt="case_study" /></div>
-                    <div> <img className='w-full' src={c16} alt="case_study" /></div>
+                    <div data-aos="fade-up"
+                        data-aos-offset="200"
+                        data-aos-delay="100"
+                        data-aos-duration="1000"
+                        data-aos-easing="ease-in-out"> <img className='w-full' src={c2} alt="case-study" /></div>
+                    <div data-aos="fade-up"
+                        data-aos-offset="200"
+                        data-aos-delay="100"
+                        data-aos-duration="1000"
+                        data-aos-easing="ease-in-out"> <img className='w-full' src={c3} alt="case-study" /></div>
+                    <div data-aos="fade-up"
+                        data-aos-offset="200"
+                        data-aos-delay="100"
+                        data-aos-duration="1000"
+                        data-aos-easing="ease-in-out"> <img className='w-full' src={c4} alt="case-study" /></div>
+                    <div data-aos="fade-up"
+                        data-aos-offset="200"
+                        data-aos-delay="100"
+                        data-aos-duration="1000"
+                        data-aos-easing="ease-in-out"> <img className='w-full' src={c5} alt="case-study" /></div>
+                    <div data-aos="fade-up"
+                        data-aos-offset="200"
+                        data-aos-delay="100"
+                        data-aos-duration="1000"
+                        data-aos-easing="ease-in-out"> <img className='w-full' src={c6} alt="case-study" /></div>
+                    <div data-aos="fade-up"
+                        data-aos-offset="200"
+                        data-aos-delay="100"
+                        data-aos-duration="1000"
+                        data-aos-easing="ease-in-out"> <img className='w-full' src={c7} alt="case-study" /></div>
+                    <div data-aos="fade-up"
+                        data-aos-offset="200"
+                        data-aos-delay="100"
+                        data-aos-duration="1000"
+                        data-aos-easing="ease-in-out"> <img className='w-full' src={c8} alt="case-study" /></div>
+                    <div data-aos="fade-up"
+                        data-aos-offset="200"
+                        data-aos-delay="100"
+                        data-aos-duration="1000"
+                        data-aos-easing="ease-in-out"> <img className='w-full' src={c9} alt="case-study" /></div>
+                    <div data-aos="fade-up"
+                        data-aos-offset="200"
+                        data-aos-delay="100"
+                        data-aos-duration="1000"
+                        data-aos-easing="ease-in-out"> <img className='w-full' src={c10} alt="case_study" /></div>
+                    <div data-aos="fade-up"
+                        data-aos-offset="200"
+                        data-aos-delay="100"
+                        data-aos-duration="1000"
+                        data-aos-easing="ease-in-out"> <img className='w-full' src={c11} alt="case_study" /></div>
+                    <div data-aos="fade-up"
+                        data-aos-offset="200"
+                        data-aos-delay="100"
+                        data-aos-duration="1000"
+                        data-aos-easing="ease-in-out"> <img className='w-full' src={c12} alt="case_study" /></div>
+                    <div data-aos="fade-up"
+                        data-aos-offset="200"
+                        data-aos-delay="100"
+                        data-aos-duration="1000"
+                        data-aos-easing="ease-in-out"> <img className='w-full' src={c13} alt="case_study" /></div>
+                    <div data-aos="fade-up"
+                        data-aos-offset="200"
+                        data-aos-delay="100"
+                        data-aos-duration="1000"
+                        data-aos-easing="ease-in-out"> <img className='w-full' src={c14} alt="case_study" /></div>
+                    <div data-aos="fade-up"
+                        data-aos-offset="200"
+                        data-aos-delay="100"
+                        data-aos-duration="1000"
+                        data-aos-easing="ease-in-out"> <img className='w-full' src={c15} alt="case_study" /></div>
+                    <div data-aos="fade-up"
+                        data-aos-offset="200"
+                        data-aos-delay="100"
+                        data-aos-duration="1000"
+                        data-aos-easing="ease-in-out"> <img className='w-full' src={c16} alt="case_study" /></div>
                 </div>
             </div>
         </div>
