@@ -45,7 +45,7 @@ const FirstCases = () => {
               to="https://www.figma.com/proto/d3rAuI8yfij5Yofn3xr0Mg/App-Case-Study-(Portfolio-Work)?type=design&node-id=2-5367&t=ToyhalCdxpkVmR8q-1&scaling=min-zoom&page-id=2%3A2226&mode=design"
             >
               <button>
-                <img className="h-[20px] md:h-[30px] xl:h-auto" src={button1} alt="" />
+                <img className="h-[25px] md:h-[30px] xl:h-auto" src={button1} alt="" />
               </button>
             </Link>
           </div>
