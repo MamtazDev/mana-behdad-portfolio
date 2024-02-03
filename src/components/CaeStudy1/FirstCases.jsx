@@ -39,7 +39,7 @@ const FirstCases = () => {
             src={c1}
             alt="case-study"
           />
-          <div className="absolute lg:bottom-[114px] bottom-[17px] lg:left-[50px] left-[18px] ">
+          <div className="absolute lg:bottom-[114px] md:bottom-[60px] bottom-[25px]  lg:left-[50px] left-[18px] ">
             <Link
               target="blank"
               to="https://www.figma.com/proto/d3rAuI8yfij5Yofn3xr0Mg/App-Case-Study-(Portfolio-Work)?type=design&node-id=2-5367&t=ToyhalCdxpkVmR8q-1&scaling=min-zoom&page-id=2%3A2226&mode=design"
