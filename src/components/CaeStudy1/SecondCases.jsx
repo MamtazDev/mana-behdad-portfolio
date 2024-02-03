@@ -25,9 +25,9 @@ const SecondCases = () => {
             <div className='max-w-screen-xl mx-auto lg:mt-[142px] mt-[121px] mb-[96px]'>
                 <div className='flex flex-col'>
                     <div className='relative'> <img className='w-full' src={c1} alt="case-study" />
-                        <div className='absolute bottom-[108px] left-[50px] '>
-                            <Link target="blank" to="https://www.figma.com/proto/nll4j9bpP58VV9zpG8ZsD7/Project-02-(Website-Case-Study)?type=design&node-id=2-2778&t=yA84SqsCoLmFCJhL-1&scaling=min-zoom&page-id=0%3A1&mode=design"> <button className='h-[66px]'>
-                                <img src={button2} alt="" />
+                        <div className='absolute bottom-[20px] lg:bottom-[108px] left-[18px] lg:left-[50px] '>
+                            <Link target="blank" to="https://www.figma.com/proto/nll4j9bpP58VV9zpG8ZsD7/Project-02-(Website-Case-Study)?type=design&node-id=2-2778&t=yA84SqsCoLmFCJhL-1&scaling=min-zoom&page-id=0%3A1&mode=design"> <button >
+                                <img className="h-[20px] md:h-[30px] xl:h-auto" src={button2} alt="" />
                             </button></Link>
                         </div>
                     </div>
