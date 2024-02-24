@@ -15,6 +15,7 @@ import c13 from '../../assets/cc13.png'
 import c14 from '../../assets/cc14.png'
 import c15 from '../../assets/cc15.png'
 import c16 from '../../assets/cc16.png'
+import videoDemo from '../../assets/3.mp4'
 import { Link } from 'react-router-dom';
 import button2 from '../../assets/button2.png'
 
@@ -43,6 +44,13 @@ const SecondCases = () => {
                     <div > <img className='w-full' src={c11} alt="case_study" /></div>
                     <div > <img className='w-full' src={c12} alt="case_study" /></div>
                     <div > <img className='w-full' src={c13} alt="case_study" /></div>
+
+                    <div >
+                        <video width="100%" height="270" autoPlay muted>
+                            <source src={videoDemo} type="video/mp4" />
+                        </video>
+                    </div>
+
                     <div > <img className='w-full' src={c14} alt="case_study" /></div>
                     <div > <img className='w-full' src={c15} alt="case_study" /></div>
                     <div > <img className='w-full' src={c16} alt="case_study" /></div>
