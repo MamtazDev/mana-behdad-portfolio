@@ -46,7 +46,7 @@ const SecondCases = () => {
                     <div > <img className='w-full' src={c13} alt="case_study" /></div>
 
                     <div >
-                        <video width="100%" height="270" autoPlay muted>
+                        <video width="100%" height="270" autoPlay muted loop>
                             <source src={videoDemo} type="video/mp4" />
                         </video>
                     </div>
