@@ -5,6 +5,7 @@ import { Link, useLocation } from "react-router-dom";
 const NavBar = () => {
   const location = useLocation();
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -18,6 +19,14 @@ const NavBar = () => {
     };
   }, []);
 
+  const toggleDropdown = () => {
+    setIsDropdownOpen(!isDropdownOpen);
+  };
+
+  const closeDropdown = () => {
+    setIsDropdownOpen(false);
+  };
+
   const isAbsolute =
     location.pathname === "/" ||
     location.pathname === "/skills" ||
@@ -25,6 +34,7 @@ const NavBar = () => {
     location.pathname === "/about" ||
     location.pathname === "/firstCaseStudy" ||
     location.pathname === "/secondCaseStudy";
+
   const isActive = (path) => {
     return location.pathname === path;
   };
@@ -41,23 +51,22 @@ const NavBar = () => {
               : "transparent"
           }  pb-[40px] lg:px-0 px-[24px] fixed top-0 lg:w-[100%] w-[100%]`}
         >
-          <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto pt-[42px]">
-            <Link to="/" className="flex items-center gap-[24px] ">
+          <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto pt-[42px]">
+            <Link to="/" className="flex items-center gap-[24px]">
               <img src={logo} className="h-8" alt="Flowbite Logo" />
               <span className="self-center text-2xl font-normal text-white font-outfit whitespace-nowrap">
                 MANA BEHDAD
               </span>
             </Link>
             <button
-              data-collapse-toggle="navbar-dropdown"
-              type="button"
-              class="text-white bg-transparent inline-flex items-center p-2 w-10 h-10 justify-center text-sm rounded-lg md:hidden dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+              onClick={toggleDropdown}
+              className="text-white bg-transparent inline-flex items-center p-2 w-10 h-10 justify-center text-sm rounded-lg md:hidden dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
               aria-controls="navbar-dropdown"
-              aria-expanded="false"
+              aria-expanded={isDropdownOpen ? "true" : "false"}
             >
-              <span class="sr-only">Open main menu</span>
+              <span className="sr-only">Open main menu</span>
               <svg
-                class="w-5 h-5"
+                className="w-5 h-5"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -65,18 +74,20 @@ const NavBar = () => {
               >
                 <path
                   stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   d="M1 1h15M1 7h15M1 13h15"
                 />
               </svg>
             </button>
             <div
-              class="flex justify-end  w-full md:block md:w-auto"
+              className={`flex justify-end w-full md:block md:w-auto ${
+                isDropdownOpen ? "block" : "hidden"
+              }`}
               id="navbar-dropdown"
             >
-              <ul class="w-40 lg:w-auto shadow flex flex-col lg:gap-[40px] gap-[20px] font-normal p-4 md:p- mt-4 lg:text-start text-center  lg:bg-transparent bg-black rounded-lg  md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0  ">
+              <ul className="flex w-40  md:w-auto flex-col lg:gap-[40px] gap-[20px] font-normal p-4 md:p- mt-4 lg:text-start text-center lg:bg-transparent bg-black rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0">
                 <li>
                   <Link
                     to="/work"
@@ -85,7 +96,9 @@ const NavBar = () => {
                         ? "text-[#8BEAAD] text-xl font-outfit hover:text-[#8BEAAD]"
                         : " text-xl font-outfit hover:text-[#8BEAAD] lg:text-white text-white "
                     }
-                    aria-current="page"
+                    onClick={() => {
+                      closeDropdown();
+                    }}
                   >
                     Work
                   </Link>
@@ -94,11 +107,13 @@ const NavBar = () => {
                   <Link
                     to="/about"
                     className={
-                      isActive("/#")
+                      isActive("/about")
                         ? "text-[#8BEAAD] text-xl font-outfit hover:text-[#8BEAAD]"
                         : " text-xl font-outfit hover:text-[#8BEAAD] lg:text-white text-white "
                     }
-                    aria-current="page"
+                    onClick={() => {
+                      closeDropdown();
+                    }}
                   >
                     About
                   </Link>
@@ -111,24 +126,25 @@ const NavBar = () => {
                         ? "text-[#8BEAAD] text-xl font-outfit hover:text-[#8BEAAD]"
                         : " text-xl font-outfit hover:text-[#8BEAAD] lg:text-white text-white "
                     }
-                    aria-current="page"
+                    onClick={() => {
+                      closeDropdown();
+                    }}
                   >
                     Skills
                   </Link>
                 </li>
                 <li>
-                  <Link
-                    target="black"
-                    to="https://drive.google.com/file/d/1VsqKRVSTcuCiryr9BHbGlpJDBKFNWO08/view?usp=sharing"
-                    className={
-                      isActive("#")
-                        ? "text-[#8BEAAD] text-xl font-outfit hover:text-[#8BEAAD]"
-                        : " text-xl font-outfit hover:text-[#8BEAAD] lg:text-white text-white "
-                    }
-                    aria-current="page"
+                  <a
+                    href="https://drive.google.com/file/d/1VsqKRVSTcuCiryr9BHbGlpJDBKFNWO08/view?usp=sharing"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-xl font-outfit hover:text-[#8BEAAD] lg:text-white text-white"
+                    onClick={() => {
+                      closeDropdown();
+                    }}
                   >
                     Resume
-                  </Link>
+                  </a>
                 </li>
               </ul>
             </div>
