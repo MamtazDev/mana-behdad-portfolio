@@ -13,7 +13,7 @@ import c11 from "../../assets/c11.png";
 import c12 from "../../assets/c12.png";
 import c13 from "../../assets/c13.png";
 import c14 from "../../assets/c14.png";
-import c15 from "../../assets/c15.png";
+import c15 from "../../assets/new.png";
 import c16 from "../../assets/c16.png";
 import button1 from "../../assets/button1.png";
 import Aos from "aos";
@@ -45,7 +45,11 @@ const FirstCases = () => {
               to="https://www.figma.com/proto/d3rAuI8yfij5Yofn3xr0Mg/App-Case-Study-(Portfolio-Work)?type=design&node-id=2-5367&t=ToyhalCdxpkVmR8q-1&scaling=min-zoom&page-id=2%3A2226&mode=design"
             >
               <button>
-                <img className="h-[25px] md:h-[30px] xl:h-auto" src={button1} alt="" />
+                <img
+                  className="h-[25px] md:h-[30px] xl:h-auto"
+                  src={button1}
+                  alt=""
+                />
               </button>
             </Link>
           </div>
@@ -233,6 +237,7 @@ const FirstCases = () => {
           />
         </div>
         <div
+          className="relative"
           data-aos="fade-up"
           data-aos-offset="200"
           data-aos-delay="100"
@@ -245,6 +250,13 @@ const FirstCases = () => {
             src={c15}
             alt="case_study"
           />
+          <Link
+            target="_blank"
+            to="https://www.figma.com/proto/d3rAuI8yfij5Yofn3xr0Mg/App-Case-Study-(Portfolio-Work)?type=design&node-id=2-5367&t=ToyhalCdxpkVmR8q-1&scaling=min-zoom&page-id=2%3A2226"
+            className="bg-[#23BEB0] text-white rounded-lg text-xs lg:text-xl p-2 absolute top-3 left-3 lg:top-10 lg:left-10"
+          >
+            Link to prototype
+          </Link>
         </div>
         <div
           data-aos="fade-up"

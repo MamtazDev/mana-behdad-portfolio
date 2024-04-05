@@ -23,7 +23,7 @@ const Sketches = () => {
           sketches are windows into the architectural <br /> dreams I bring to
           life.
         </p>
-        <div className="grid grid-cols-12 gap-[45px]">
+        <div className="grid grid-cols-12 gap-y-6 lg:gap-[45px]">
           <div className="w-full col-span-12 lg:col-span-4">
             <img className="w-full" src={sk1} alt="sketches" />
           </div>
